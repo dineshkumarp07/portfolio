@@ -11,7 +11,7 @@ const Projects = () => {
       id: 1,
       title: 'Restaurant Reservation System',
       description: 'A comprehensive restaurant management system that allows customers to make online reservations, view menu items, and manage their bookings. Features include real-time table availability, customer profiles, and admin dashboard.',
-      image: '/projects/restaurant.png',
+      image: 'Screenshot 2025-11-21 111511.png',
       technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
       category: 'fullstack',
       liveUrl: 'Screenshot 2025-11-11 200954.png',
