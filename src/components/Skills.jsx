@@ -27,6 +27,7 @@ const Skills = () => {
       title: 'Tools & Others',
       skills: [
         { name: 'Git' },
+        { name: 'vs code'},
       ]
     }
   ]
@@ -53,6 +54,8 @@ const Skills = () => {
         return 'devicon-mongodb-plain colored'
       case 'Git':
         return 'devicon-git-plain colored'
+      case 'vs code':
+        return 'devicon-visualstudio-plain colored'
       default:
         return ''
     }

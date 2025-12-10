@@ -32,34 +32,9 @@ const Footer = () => {
             <p className="footer-description">
               A passionate developer creating digital experiences that make a difference.
             </p>
-            <div className="footer-social">
-              {socialLinks.map((link, index) => (
-                <a
-                  key={index}
-                  href={link.url}
-                  className="social-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={link.label}
-                >
-                  {link.icon}
-                </a>
-              ))}
-            </div>
           </div>
 
           <div className="footer-links">
-            <div className="footer-section">
-              <h4>Quick Links</h4>
-              <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </div>
-
             <div className="footer-section">
               <h4>Services</h4>
               <ul>
@@ -79,18 +54,6 @@ const Footer = () => {
                 <li>Nambiyur, Erode, Tamil Nadu, India</li>
               </ul>
             </div>
-          </div>
-        </div>
-
-        <div className="footer-bottom">
-          <div className="footer-copyright">
-            <p>
-              © {currentYear} Portfolio. Made with <Heart size={16} className="heart-icon" /> Dinesh Kumar 
-            </p>
-          </div>
-          <div className="footer-legal">
-            <a href="#privacy">Privacy Policy</a>
-            <a href="#terms">Terms of Service</a>
           </div>
         </div>
       </div>

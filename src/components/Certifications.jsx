@@ -16,20 +16,20 @@ const Certifications = () => {
     },
     {
       id: 2,
-      title: 'MongoDB Associate Developer Exam',
-      issuer: 'MongoDB',
+      title: 'spring boot',
+      issuer: 'springboot',
       date: '2024',
       description: 'Mastered JavaScript fundamentals, algorithms, and data structures through hands-on projects.',
-      credentialUrl: '#',
+      credentialUrl: 'WhatsApp Image 2025-12-06 at 12.18.57_887f2fc3.jpg',
       featured: false  
     },
     {
       id: 3,
-      title: 'Angular',
+      title: 'Angular foundation',
       issuer: 'Coursera',
       date: '2023',
       description: 'Advanced React concepts including hooks, context, state management, and component architecture.',
-      credentialUrl: '#',
+      credentialUrl: 'WhatsApp Image 2025-12-06 at 12.18.58_e5b0a26d.jpg',
       featured: false
     },
     {

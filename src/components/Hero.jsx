@@ -67,9 +67,6 @@ const Hero = () => {
               <a href="https://www.linkedin.com/in/dinesh-kumar-9041602a5/" className="social-circle with-tooltip" data-label="LinkedIn" target="_blank" rel="noopener noreferrer" title="LinkedIn">
                 <Linkedin size={22} />
               </a>
-              <a href="https://www.instagram.com/_.dinesh_01?igsh=MXhwZGtrNmVvYzBr" className="social-circle with-tooltip" data-label="Instagram" target="_blank" rel="noopener noreferrer" title="Instagram">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5z" stroke="currentColor"/><path d="M12 8a4 4 0 100 8 4 4 0 000-8z" stroke="currentColor"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
-              </a>
               <a href="mailto:dineshkumarp.23it@kongu.edu" className="social-circle with-tooltip" data-label="Email" title="Email">
                 <Mail size={22} />
               </a>

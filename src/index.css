@@ -367,9 +367,3 @@ a:focus-visible {
   transform: translateY(-2px);
 }
 
-*, *::before, *::after {
-  /* Keep keyframe animations disabled sitewide */
-  animation: none !important;
-  /* Allow transitions so hover effects work */
-  transition: unset !important;
-}
