@@ -80,7 +80,7 @@ const About = () => {
               <ul className="info-list">
                 <li><span>Location:</span> Erode</li>
                 <li><span>Education:</span> B.Tech IT (3rd Year, KEC)</li>
-                <li><span>Projects Completed:</span> 4</li>
+                <li><span>Projects Completed:</span> 3</li>
                 <li><span>Status:</span> Available for internships</li>
                 <li><span>Experience:</span> Project-based</li>
               </ul>

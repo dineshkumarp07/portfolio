@@ -14,32 +14,32 @@ const Projects = () => {
       image: 'Screenshot 2025-11-21 111511.png',
       technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
       category: 'fullstack',
-      liveUrl: 'Screenshot 2025-11-11 200954.png',
-      githubUrl: 'https://github.com/yourusername/restaurant-reservation',
-      featured: false 
+      liveUrl: '#',
+      githubUrl: 'https://github.com/dineshkumarp07/restaurant-reservation',
+      featured: true 
     },
     
     {
-      id: 3,
+      id: 2,
       title: 'Student Complaint Portal',
       description: 'A secure platform for students to submit complaints and feedback anonymously. Features include anonymous reporting, complaint tracking, admin response system, and analytics dashboard for administrators.',
       image: 'Screenshot 2025-11-11 200855.png',
-      technologies: ['React', 'Node.js','Express','MongoDB'],
+      technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
       category: 'fullstack',
-      liveUrl: 'https://student-complaint-portal.com',
-      githubUrl: 'https://github.com/yourusername/student-complaint-portal',
+      liveUrl: '#',
+      githubUrl: 'https://github.com/dineshkumarp07/complaint_portal',
       featured: false
     },
     {
-      id: 4,
-      title: 'E-Learning Platform',
-      description: 'An online learning management system with course creation, student enrollment, progress tracking, and interactive quizzes. Features include video streaming, assignment submission, and grade management.',
-      image: '/api/placeholder/400/300',
-      technologies: ['React', 'javascript', 'Node.js', 'MongoDB',],
-      category: 'fullstack',
-      liveUrl: 'https://elearning-platform-demo.com',
-      githubUrl: 'https://github.com/yourusername/elearning-platform',
-      featured: false
+      id: 3,
+      title: 'Portfolio',
+      description: 'A modern, responsive portfolio website showcasing my projects, skills, and professional experience. Features smooth animations, interactive components, and optimized performance.',
+      image: 'image.png',
+      technologies: ['React', 'Vite', 'Framer Motion', 'Lucide React', 'React Router', 'CSS3'],
+      category: 'frontend',
+      liveUrl: '#',
+      githubUrl: 'https://github.com/dineshkumarp07/portfolio',
+      featured: true
     }
   ]
 
