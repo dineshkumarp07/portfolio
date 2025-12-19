@@ -4,11 +4,6 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/portfolio-Dinesh kumar/',
-  server: {
-    port: 3000,
-    open: true
-  },
   build: {
     outDir: 'dist',
     assetsDir: 'assets'
