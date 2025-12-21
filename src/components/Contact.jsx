@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react'
+import emailjs from 'emailjs-com'
 import './Contact.css'
 
 const Contact = () => {
@@ -11,6 +12,8 @@ const Contact = () => {
     message: ''
   })
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [error, setError] = useState('')
 
   const handleChange = (e) => {
     setFormData({
@@ -21,20 +24,44 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // Here you would typically send the form data to your backend
-    console.log('Form submitted:', formData)
-    setIsSubmitted(true)
-    
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false)
+    setIsSubmitting(true)
+    setError('')
+
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      subject: formData.subject,
+      message: formData.message,
+      to_email: 'dineshperiyasamy0102@gmail.com'
+    }
+
+    emailjs.send(
+      'service_er7w4s8', // Replace with your EmailJS service ID
+      'template_58deooc', // Replace with your EmailJS template ID
+      templateParams,
+      'Apuygjb7_7jgf5wEy' // Replace with your EmailJS user ID
+    )
+    .then((response) => {
+      console.log('SUCCESS!', response.status, response.text)
+      setIsSubmitted(true)
+      setIsSubmitting(false)
       setFormData({
         name: '',
         email: '',
         subject: '',
         message: ''
       })
-    }, 3000)
+      
+      // Reset success message after 5 seconds
+      setTimeout(() => {
+        setIsSubmitted(false)
+      }, 5000)
+    })
+    .catch((err) => {
+      console.error('FAILED...', err)
+      setError('Failed to send message. Please try again later.')
+      setIsSubmitting(false)
+    })
   }
 
   const contactInfo = [
@@ -131,6 +158,11 @@ const Contact = () => {
             viewport={{ once: true }}
           >
             <div className="contact-form-wrapper">
+              {error && (
+                <div className="error-message">
+                  {error}
+                </div>
+              )}
               {isSubmitted ? (
                 <motion.div
                   className="success-message"
@@ -196,9 +228,9 @@ const Contact = () => {
                     />
                   </div>
 
-                  <button type="submit" className="btn btn-primary submit-btn">
+                  <button type="submit" className="btn btn-primary submit-btn" disabled={isSubmitting}>
                     <Send size={20} />
-                    Send Message
+                    {isSubmitting ? 'Sending...' : 'Send Message'}
                   </button>
                 </form>
               )}
