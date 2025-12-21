@@ -20,7 +20,7 @@ const Certifications = () => {
       issuer: 'springboot',
       date: '2024',
       description: 'Mastered JavaScript fundamentals, algorithms, and data structures through hands-on projects.',
-      credentialUrl: 'WhatsApp Image 2025-12-06 at 12.18.57_887f2fc3.jpg',
+      credentialUrl: '/WhatsApp Image 2025-12-06 at 12.18.57_887f2fc3.jpg',
       featured: false  
     },
     {
@@ -29,7 +29,7 @@ const Certifications = () => {
       issuer: 'Coursera',
       date: '2023',
       description: 'Advanced React concepts including hooks, context, state management, and component architecture.',
-      credentialUrl: 'WhatsApp Image 2025-12-06 at 12.18.58_e5b0a26d.jpg',
+      credentialUrl: '/WhatsApp Image 2025-12-06 at 12.18.58_e5b0a26d.jpg',
       featured: false
     },
     {
