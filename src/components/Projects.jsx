@@ -30,17 +30,7 @@ const Projects = () => {
       githubUrl: 'https://github.com/dineshkumarp07/complaint_portal',
       featured: false
     },
-    {
-      id: 3,
-      title: 'Portfolio',
-      description: 'A modern, responsive portfolio website showcasing my projects, skills, and professional experience. Features smooth animations, interactive components, and optimized performance.',
-      image: '/image.png',
-      technologies: ['React', 'Vite', 'Framer Motion', 'Lucide React', 'CSS3'],
-      category: 'frontend',
-      liveUrl: '#',
-      githubUrl: 'https://github.com/dineshkumarp07/portfolio',
-      featured: true
-    }
+   
   ]
 
   const filters = [
