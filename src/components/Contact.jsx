@@ -36,10 +36,10 @@ const Contact = () => {
     }
 
     emailjs.send(
-      'service_er7w4s8', // Replace with your EmailJS service ID
-      'template_58deooc', // Replace with your EmailJS template ID
+      'service_er7w4s8', // EmailJS service ID
+      'template_l14z25k', // EmailJS template ID
       templateParams,
-      'Apuygjb7_7jgf5wEy' // Replace with your EmailJS user ID
+      'Apuygjb7_7jgf5wEy' // EmailJS public key
     )
     .then((response) => {
       console.log('SUCCESS!', response.status, response.text)
@@ -59,7 +59,7 @@ const Contact = () => {
     })
     .catch((err) => {
       console.error('FAILED...', err)
-      setError('Failed to send message. Please try again later.')
+      setError('Failed to send message. Please try again or contact directly at dineshperiyasamy0102@gmail.com')
       setIsSubmitting(false)
     })
   }

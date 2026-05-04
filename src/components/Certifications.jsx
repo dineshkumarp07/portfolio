@@ -6,15 +6,6 @@ import './Certifications.css'
 const Certifications = () => {
   const certifications = [
     {
-      id: 1,
-      title: 'Full Stack Web Development',
-      issuer: 'Coursera',
-      date: '2024',
-      description: 'Comprehensive course covering React, Node.js, MongoDB, and modern web development practices.',
-      credentialUrl: '#',
-      featured: false
-    },
-    {
       id: 2,
       title: 'spring boot',
       issuer: 'springboot',
@@ -30,15 +21,6 @@ const Certifications = () => {
       date: '2023',
       description: 'Advanced React concepts including hooks, context, state management, and component architecture.',
       credentialUrl: '/WhatsApp Image 2025-12-06 at 12.18.58_e5b0a26d.jpg',
-      featured: false
-    },
-    {
-      id: 4,
-      title: 'Git hub Foundation',
-      issuer: 'Github',
-      date: '2023',
-      description: 'Learned server-side development with Node.js, Express, and database integration.',
-      credentialUrl: '#',
       featured: false
     }
   ]

@@ -55,6 +55,13 @@
   box-shadow: var(--shadow);
   color: var(--text-primary);
   text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-height: 200px;
+}
+
+.platform-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
 }
 
 .platform-card.lc {
@@ -90,7 +97,7 @@
 
 .platform-body {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 0.75rem;
 }
 

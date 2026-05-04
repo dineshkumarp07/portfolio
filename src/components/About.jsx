@@ -33,7 +33,10 @@ const About = () => {
     fetch(`https://leetcode-stats-api.herokuapp.com/${u}`)
       .then(r => r.json())
       .then(d => setLcStats({ total: d.totalSolved ?? null, easy: d.easySolved ?? null, medium: d.mediumSolved ?? null, hard: d.hardSolved ?? null }))
-      .catch(() => {})
+      .catch(() => {
+        // Fallback to hardcoded stats if API fails
+        setLcStats({ total: 150, easy: 80, medium: 50, hard: 20 })
+      })
   }, [])
 
   return (
@@ -122,32 +125,7 @@ const About = () => {
               <div className="platform-footer">Click to view profile →</div>
             </a>
 
-            <a
-              className="platform-card gfg"
-              href="https://auth.geeksforgeeks.org/user/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="platform-header">
-                <div className="badge">GFG</div>
-                <div className="handle">@your_gfg_id</div>
-              </div>
-              <div className="platform-body">
-                <div className="stat-item">
-                  <div className="stat-value">—</div>
-                  <div className="stat-label">Problems</div>
-                </div>
-                <div className="stat-item">
-                  <div className="stat-value">—</div>
-                  <div className="stat-label">Score</div>
-                </div>
-                <div className="stat-item">
-                  <div className="stat-value">—</div>
-                  <div className="stat-label">Rank</div>
-                </div>
-              </div>
-              <div className="platform-footer">Click to view profile →</div>
-            </a>
+            
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import { Download, Github, Linkedin, Mail } from 'lucide-react'
 import './Hero.css'
 
 const Hero = () => {
-  const skills = ['React', 'JavaScript', 'TypeScript', 'HTML/CSS', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'Python', 'Git']
+  const skills = ['Java', 'React', 'HTML', 'CSS', 'NodeJS']
   const [idx, setIdx] = useState(0)
   const currentSkill = skills[idx]
   useEffect(() => {
@@ -64,7 +64,7 @@ const Hero = () => {
               <a href="https://github.com/dineshkumarp07" className="social-circle with-tooltip" data-label="GitHub" target="_blank" rel="noopener noreferrer" title="GitHub">
                 <Github size={22} />
               </a>
-              <a href="https://www.linkedin.com/in/dinesh-kumar-9041602a5/" className="social-circle with-tooltip" data-label="LinkedIn" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+              <a href="https://www.linkedin.com/in/dinesh-kumar-p-466560320/" className="social-circle with-tooltip" data-label="LinkedIn" target="_blank" rel="noopener noreferrer" title="LinkedIn">
                 <Linkedin size={22} />
               </a>
               <a href="mailto:dineshkumarp.23it@kongu.edu" className="social-circle with-tooltip" data-label="Email" title="Email">
