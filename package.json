@@ -14,7 +14,8 @@
     "framer-motion": "^10.16.4",
     "lucide-react": "^0.263.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "vite": "^5.4.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
@@ -23,8 +24,7 @@
     "eslint": "^8.45.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.3",
-    "vite": "^5.4.0"
+    "eslint-plugin-react-refresh": "^0.4.3"
   },
   "engines": {
     "node": "24.x"
