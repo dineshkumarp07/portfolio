@@ -58,7 +58,7 @@ const Hero = () => {
               </button>
             </div>
             <div className="social-row">
-              <a href="/Dk-Resume.pdf" className="social-circle with-tooltip" data-label="Download Resume" download title="Download Resume">
+              <a href="/Dkresume.pdf" className="social-circle with-tooltip" data-label="Download Resume" download title="Download Resume">
                 <Download size={22} />
               </a>
               <a href="https://github.com/dineshkumarp07" className="social-circle with-tooltip" data-label="GitHub" target="_blank" rel="noopener noreferrer" title="GitHub">
